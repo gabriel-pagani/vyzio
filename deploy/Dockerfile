@@ -3,7 +3,7 @@ FROM python:3.12-slim-bookworm AS builder
 
 WORKDIR /app
 
-COPY ./backend/requirements.txt .
+COPY ../backend/requirements.txt .
 
 RUN apt-get update && apt-get install -y build-essential gcc python3-dev libpq-dev libsasl2-dev libldap2-dev --no-install-recommends
 
@@ -22,6 +22,6 @@ RUN apt-get update && apt-get install -y libpq5 libsasl2-2 libldap-2.5-0 --no-in
 
 COPY --from=builder /install /usr/local
 
-COPY ./backend/ .
+COPY ../backend/ .
 
 EXPOSE 8000
