@@ -1,7 +1,8 @@
 build-project:
 	cd frontend/ && npm install && npm run build && \
 	cd ../_deploy/ && \
-	docker compose up -d --build
+	docker compose up -d --build && \
+	docker compose exec app python manage.py shell -c "from app.models import Users; Users.objects.create_superuser(email='admin@email.com', username='admin', password='1234')"
 
 clean-project:
 	cd _deploy/ && \
