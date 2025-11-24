@@ -25,6 +25,9 @@ restart-system:
 list-images:
 	docker images
 
+list-volumes:
+	docker volume ls
+
 list-containers:
 	docker ps -a
 
