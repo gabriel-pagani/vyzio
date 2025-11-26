@@ -1,4 +1,4 @@
-name: dashly
+name: vyzio
 
 services:
   database:
@@ -23,7 +23,7 @@ services:
     build:
       context: ../
       dockerfile: _deploy/Dockerfile
-    image: dashly
+    image: vyzio
     container_name: app
     expose:
       - "8000"

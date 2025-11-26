@@ -60,7 +60,7 @@ function Login({ onLoginSuccess }) {
     // Adicionamos este wrapper para conter os estilos da página de login
     <div className="login-wrapper">
       <div className="container" id="tela-login">
-        <h2>Dashly</h2>
+        <h2>Vyzio</h2>
 
         {successMessage && (
           <div className="mensagem sucesso">

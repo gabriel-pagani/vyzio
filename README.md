@@ -1,14 +1,14 @@
-# Dashly
+# Vyzio
 Sistema de gerenciamento de dashboards integrado com Power BI e Metabase
 
 ## 🚀 Instalação e Configuração Inicial
 
 #### 1. Clone o repositório:
 ```bash
-git clone https://github.com/gabriel-pagani/dashly.git && cd dashly/
+git clone https://github.com/gabriel-pagani/vyzio.git && cd vyzio/
 ```
 #### 2. Configure as variáveis de ambiente:
-Crie um arquivo .env na raiz do projeto (baseado no [.env.example](https://github.com/gabriel-pagani/dashly/blob/main/.env.example)) e configure as credenciais do banco e do Django.
+Crie um arquivo .env na raiz do projeto (baseado no [.env.example](https://github.com/gabriel-pagani/vyzio/blob/main/.env.example)) e configure as credenciais do banco e do Django.
 ```bash
 cp --update=none ./_deploy/.env.example ./_deploy/.env
 ```
@@ -54,7 +54,7 @@ python3 -c "import string, secrets; print(''.join(secrets.choice(string.ascii_le
 ```
 
 # Licença
-See the [LICENSE](https://github.com/gabriel-pagani/dashly/blob/main/LICENSE) file for more details.
+See the [LICENSE](https://github.com/gabriel-pagani/vyzio/blob/main/LICENSE) file for more details.
 
 # Informação para Contato
 Email: gabrielpaganidesouza@gmail.com
